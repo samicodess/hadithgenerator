@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadith generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/floating_btn.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- note-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/notie/dist/notie.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h3>Quotes Generator</h3>
+      </div>
+
+      <div class="container">
+        <span class="quote-icon quote-icon-left">
+          <i class="fas fa-quote-left"></i>
+        </span>
+
+        <div class="content">
+          <div class="quote">
+            <p class="quote-text"></p>
+          </div>
+        </div>
+
+        <span class="quote-icon quote-icon-right">
+          <i class="fas fa-quote-right"></i>
+        </span>
+
+        <div class="author">
+          <p class="quote-author">_ John Doe</p>
+          <p class="refno">Al Bukhari</p>
+        </div>
+
+        <select id="bookSelect">
+          <option value="bukhari">Sahih Al-Bukhari</option>
+          <option value="muslim">Sahih Muslim</option>
+          <option value="abudawud">Abu Dawud</option>
+          <option value="ibnmajah">Ibn Majah</option>
+          <option value="tirmidhi">Al-Tirmidhi</option>
+        </select>
+
+        <div id="quote"></div>
+        <div id="author"></div>
+        <div id="refno"></div>
+
+        <div class="btns">
+          <div class="tools-btns">
+            <button class="btn-app speech-btn">
+              <ion-icon name="volume-medium-outline"></ion-icon>
+            </button>
+            <button class="btn-app tweet-btn">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </button>
+            <button class="btn-app copy-btn">
+              <ion-icon name="copy-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="new-btn">
+            <button class="btn-app new-quote-btn">
+              New Quote
+              <ion-icon name="add-circle-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="copyright">
+      <p>
+        Made with ❤️ by <a href="github.com/samicodess" target="_blank">Sami</a>
+      </p>
+    </section>
+
+    <!-- color picker -->
+    <div class="color-paletter">
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+
+      <!-- ion-icons -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+      <!-- notie -->
+      <script src="https://unpkg.com/notie"></script>
+
+      <script src="scritp.js"></script>
+    </div>
+  </body>
+</html>
